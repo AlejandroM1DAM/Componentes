@@ -32,7 +32,7 @@ public class JDNIField extends JTextField implements Serializable, FocusListener
     
     public static final String DNI_CHARS = "TRWAGMYFPDXBNJZSQVHLCKE";
     
-    private static boolean validateDNI(String dniStr) {
+    public static boolean validateDNI(String dniStr) {
           String dniSaneado = dniStr.trim().replaceAll(" ", "").replaceAll("-", "");
           
           String numerosDNI = dniSaneado.substring(0,dniSaneado.length()-1);
